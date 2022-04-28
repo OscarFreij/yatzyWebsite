@@ -1,0 +1,162 @@
+* {
+    font-family: Helvetica;
+    text-align: center;
+}
+
+html body 
+{
+    height: 100vh;
+    margin: 0;
+}
+
+.navbar
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: #323232;
+    color: whitesmoke;
+}
+
+.navbar-brand
+{
+    font-size: large;
+}
+
+.navbar-links
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-link
+{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover
+{
+    color: orange;
+}
+
+.wrapper
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+}
+
+.play-wrapper
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 7fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.scoreboard
+{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: #323232 1px;
+    border-right: solid;
+    border-bottom: solid;
+    box-sizing: border-box;
+}
+
+.diceboard
+{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: #323232 1px;
+    border-left: solid;
+    border-bottom: solid;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 105, 20);
+}
+
+.dice
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 11fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.dice > img
+{
+    image-rendering: pixelated;
+    height: 80%;
+}
+
+.eventlog
+{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    border: red solid 1px;
+    box-sizing: border-box;
+}
+
+
+
+.score-table
+{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(185, 185, 185);
+}
+
+.score-lable
+{
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(25, 1fr);
+    align-items: center;
+    overflow-x: scroll;
+    border-right: #323232 solid 1px;
+}
+
+.score-lable > * , .player > *
+{
+    align-self: center;
+}
+
+.players
+{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    width: 100%;
+    overflow-x: scroll;
+    height: 100%;
+
+}
+
+.player
+{
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(25, 1fr);
+    grid-row: 1/2;
+    align-items: center;
+    border-right: #323232 solid 1px;
+    border-left: #323232 solid 1px;
+}
