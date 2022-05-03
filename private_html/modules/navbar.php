@@ -1,11 +1,27 @@
-<div class="navbar">
-    <div class="navbar-brand">
-        YATZZZY - For LIFE!
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="?page=home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="?page=play">Play</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="?page=howToPlay">How To Play</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="?page=customize">Customize</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="?page=settings">Settings</a>
+        </li>
+      </ul>
     </div>
-    <div class="navbar-links">
-    <a class="nav-link" href="?page=play">Play</a>
-    <a class="nav-link" href="?page=customize">Customize</a>
-    <a class="nav-link" href="?page=howToPlay">How To Play</a>
-    <a class="nav-link" href="?page=settings">Settings</a>
-    </div>
-</div>
+  </div>
+</nav>
