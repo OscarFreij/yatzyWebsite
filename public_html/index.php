@@ -22,7 +22,7 @@ if(isset($_GET['page']))
 }
 else
 {
-    include "../private_html/pages/home.php";
+    include "../private_html/pages/play.php";
 }
 
 include "../private_html/modules/footer.php";
