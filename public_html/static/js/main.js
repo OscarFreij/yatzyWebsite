@@ -1,12 +1,13 @@
-var dices = [];
-
-
 function rolldices(){
-    for (let i = 0; i < 6; i++)
+    for (let i = 0; i < 5; i++)
     {
+        var dices = [];
         dices[i] = Math.floor(Math.random() * 6) +1;
-    
-        document.getElementById('dice'+i).src = "static/media/dice_" + dices[i] + ".png";
+        
+        if (document.getElementById('dice'+i).parentElement.getElementsByTagName("input")[0].checked)
+        {
+            document.getElementById('dice'+i).src = "static/media/dice_" + dices[i] + ".png";
+        }
     }
 }
 
