@@ -12,5 +12,20 @@ function rolldices(){
 
 function newPlayer()
 {
-    $("#players").append($("#templates").children[0].cloneNode(true));
+    $("#players").append($("#templates").children()[0].cloneNode(true));
+}
+
+function calcScores()
+{
+    var players = $("#players").children();
+    
+    for (let i = 0; i < players.length; i++) {
+        const player = players[i];
+        var totalScore = 0;
+        for (let j = 1; j < player.getElementsByTagName("input").length; j++) {
+            const element = player.getElementsByTagName("input")[j];
+            totalScore += parseInt(element.value);
+        }
+        player.children[0].children[player.children[0].children.length-1].innerText = totalScore;
+    }
 }

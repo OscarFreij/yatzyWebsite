@@ -18,5 +18,6 @@
         <li class="list-group-item"><input type="number"></li>
         <li class="list-group-item"><input type="number"></li>
         <li class="list-group-item"><input type="number"></li>
+        <li class="list-group-item fw-bolder"></li>
     </ul>
 </div>

@@ -1,6 +1,6 @@
 <div class="container-fluid col-12">
     <div class="row text-center">
-        <div class="container col-5 mt-2">
+        <div class="container col-12 col-md-5 mt-2">
             <h2>
                 Score Board
             </h2>
@@ -25,18 +25,23 @@
                         <li class="list-group-item">Fullt Hus: </li>
                         <li class="list-group-item">Chans: </li>
                         <li class="list-group-item">Yatzy: </li>
+                        <li class="list-group-item fw-bolder">Total: </li>
                     </ul>
                 </div>
                 <div id="players" class="container col-7 d-flex" style="overflow-x: auto;">
 
                 </div>
             </div>
+            <div class="row container col-10 mx-auto btn-group" role="group">
+                <button onclick="newPlayer();" class="btn btn-warning col-6" type="submit">Add player!</button>
+                <button onclick="calcScores();" class="btn btn-success col-6" type="submit">Calculate Score!</button>
+            </div>
         </div>
-        <div class="container col-5 mt-2" style="height: 100%">
+        <div class="container col-12 col-md-5 mt-2 mx-auto" style="height: 100%">
             <h2>
             Dice Box
             </h2>
-            <div class="row col-12 my-3 align-middle">
+            <div class="row col-12 my-3 mx-auto">
                 <div class="dice col-6">
                     <img id="dice0" src="static/media/dice_1.png" width=128 height=128 style="image-rendering: pixelated" alt="">
                     <div class="form-check form-switch">
@@ -50,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row col-12 mb-3">
+            <div class="row col-12 mb-3 mx-auto">
                 <div class="dice col-12">
                 <img id="dice2" src="static/media/dice_3.png" width=128 height=128 style="image-rendering: pixelated" alt="">
                     <div class="form-check form-switch">
@@ -58,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row col-12 mb-3">
+            <div class="row col-12 mb-3 mx-auto">
                 <div class="dice col-6">
                 <img id="dice3" src="static/media/dice_4.png" width=128 height=128 style="image-rendering: pixelated" alt="">
                     <div class="form-check form-switch">
@@ -72,7 +77,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row col-12">
+            <div class="row col-10 mx-auto">
             <button onclick="rolldices();" class="btn btn-primary" type="submit">Roll!</button>
             </div>
         </div>
