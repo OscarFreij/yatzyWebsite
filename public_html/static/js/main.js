@@ -6,6 +6,11 @@ function rolldices(){
     {
         dices[i] = Math.floor(Math.random() * 6) +1;
     
-        document.getElementById('dice'+i).src = "../media/dice_" + dices[i] + ".png";
+        document.getElementById('dice'+i).src = "static/media/dice_" + dices[i] + ".png";
     }
+}
+
+function newPlayer()
+{
+    $("#players").append($("#templates").children[0].cloneNode(true));
 }
